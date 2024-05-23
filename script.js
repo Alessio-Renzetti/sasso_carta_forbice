@@ -8,6 +8,7 @@ function scontro(e) {
     console.log(e.firstElementChild.firstElementChild.src)
     let card_content = document.querySelector("#card_content")
     card_content.style = "display: none;"
+    let content=document.querySelector("#content")
     let array = [
         "img/rocciosa.png.png",
         "img/forbici.png.png",
@@ -25,12 +26,15 @@ function scontro(e) {
             switch (rand) {
                 case 0:
                     display.innerHTML = `<h1 class=" scale-in-center">Hai pareggiato</h1>`
+                    content.innerHTML += `<div class="flex align_items_CE justify_content_CE"><button class="fix_button" onclick="window.location.reload()">Rigioca</button></div>`
                     break;
                 case 1:
                     display.innerHTML = `<h1 class=" scale-in-center">HAI VINTO</h1>`
+                    content.innerHTML += `<div class="flex align_items_CE justify_content_CE"><button class="fix_button" onclick="window.location.reload()">Rigioca</button></div>`
                     break;
                 case 2:
                     display.innerHTML = `<h1 class=" scale-in-center">HAI PERSO</h1>`
+                    content.innerHTML += `<div class="flex align_items_CE justify_content_CE"><button class="fix_button" onclick="window.location.reload()">Rigioca</button></div>`
                     break;
             }
             break;
@@ -38,12 +42,15 @@ function scontro(e) {
             switch (rand) {
                 case 0:
                     display.innerHTML = `<h1 class=" scale-in-center">HAI PERSO</h1>`
+                    content.innerHTML += `<div class="flex align_items_CE justify_content_CE"><button class="fix_button" onclick="window.location.reload()">Rigioca</button></div>`
                     break;
                 case 1:
                     display.innerHTML = `<h1 class=" scale-in-center">Hai pareggiato</h1>`
+                    content.innerHTML += `<div class="flex align_items_CE justify_content_CE"><button class="fix_button" onclick="window.location.reload()">Rigioca</button></div>`
                     break;
                 case 2:
                     display.innerHTML = `<h1 class=" scale-in-center">HAI VINTO</h1>`
+                    content.innerHTML += `<div class="flex align_items_CE justify_content_CE"><button class="fix_button" onclick="window.location.reload()">Rigioca</button></div>`
                     break;
             }
             break;
@@ -51,12 +58,15 @@ function scontro(e) {
             switch (rand) {
                 case 0:
                     display.innerHTML = `<h1 class=" scale-in-center">HAI VINTO</h1>`
+                    content.innerHTML += `<div class="flex align_items_CE justify_content_CE"><button class="fix_button" onclick="window.location.reload()">Rigioca</button></div>`
                     break;
                 case 1:
                     display.innerHTML = `<h1 class=" scale-in-center">HAI PERSO</h1>`
+                    content.innerHTML += `<div class="flex align_items_CE justify_content_CE"><button class="fix_button" onclick="window.location.reload()">Rigioca</button></div>`
                     break;
                 case 2:
                     display.innerHTML = `<h1 class=" scale-in-center">Hai pareggiato</h1>`
+                    content.innerHTML += `<div class="flex align_items_CE justify_content_CE"><button class="fix_button" onclick="window.location.reload()">Rigioca</button></div>`
                     break;
             }
             break;
